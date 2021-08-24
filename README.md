@@ -1,6 +1,6 @@
 # Run Blazemeter Test Action
 
-This action allows you to run Blazemeter existing Test
+This action allows you to run BlazeMeter existing Test.
 
 ## Inputs
 
@@ -15,7 +15,7 @@ This action allows you to run Blazemeter existing Test
 
 ## Example usage
 
-uses: actions/DockerAction@v1
+uses: actions/BlazeRunnerAction@v1
 with:
    apikey: 'xxx'
    apisecret: 'xxx'
