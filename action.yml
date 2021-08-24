@@ -1,0 +1,19 @@
+# action.yml
+name: 'BlazeRunnerAction'
+description: 'Run Blazemeter Test from GitHub Action'
+inputs:
+  apikey:  # id of input
+    description: 'API Key'
+    required: true
+    default: 'Test'
+  apisecret:  # id of input
+    description: 'API Secret'
+    required: true
+    default: 'Test'
+  testid:  # id of input
+    description: 'Test Id'
+    required: true
+    default: '0'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

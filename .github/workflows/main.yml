@@ -1,0 +1,18 @@
+on: [push]
+
+jobs:
+  run_existing_test:
+    runs-on: ubuntu-latest
+    name: Run Blazemeter test
+    steps:
+      # - name: Checkout
+        # uses: actions/checkout@v2
+      - name: Run Blazemeter test
+        #uses: ./ # Uses an action in the root directory
+        uses: PoojaMutadak504/DockerAction@v2
+        id: run-existing-test
+        with:
+          apikey: 'b9107809a101b8b788e9964f'
+          apisecret: '24da75ad1302cfb986fe84846288e3c9aecb61742a269f0927db60b286aedbf4f9c28df6'
+          testid: '9092315'
+
