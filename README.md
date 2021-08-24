@@ -15,7 +15,7 @@ This action allows you to run BlazeMeter existing Test.
 
 ## Example usage
 
-uses: actions/BlazeRunnerAction@v1
+uses: BlazeRunner-BZR/Github-Action@v2
 with:
    apikey: 'xxx'
    apisecret: 'xxx'
