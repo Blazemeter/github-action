@@ -1,5 +1,5 @@
 # action.yml
-name: 'BlazeRunnerAction'
+name: 'BlazeAction'
 description: 'Run Blazemeter Test from GitHub Action'
 inputs:
   apikey:  # id of input
@@ -14,6 +14,99 @@ inputs:
     description: 'Test Id'
     required: true
     default: '0'
+  testname:  # id of input
+    description: 'Test name for creating new test'
+    required: false
+    default: '0'
+  projectid:  # id of input
+    description: 'Project Id'
+    required: false
+    default: '0'
+  inputstartfile:  # id of input
+    description: 'Start file for create test'
+    required: false
+    default: 'null'
+  createtest:  # id of input
+    description: 'Create test flag'
+    required: false
+    default: 'false'
+  totalusers:
+    description: 'total users'
+    required: false
+    default: '20'
+  duration:
+    description: 'duration'
+    required: false
+    default: '20'
+  rampup:
+    description: 'rampup'
+    required: false
+    default: '1'
+  uploadfilechk:
+    description: 'upload file'
+    required: false
+    default: 'false'
+  continuepipeline:
+    description: 'Continue Pipeline'
+    required: false
+    default: 'true'
+  multitests:
+    description: 'multitests'
+    required: false
+    default: 'false'
+  functionaltest:
+    description: 'functionaltest'
+    required: false
+    default: 'false'
+  modeldata:  # id of input
+    description: 'Data to be updated in JSON String format'
+    required: false
+    default: '{}'
+  env_variable:
+    description: 'env_variable'
+    required: false
+    default: '{}'
+  showtaillog:
+    description: 'showtaillog'
+    required: false
+    default: 'true'
+  jmeterproperties:
+    description: 'jmeterproperties'
+    required: false
+    default: 'null'
+  reportname:
+    description: 'report name'
+    required: false
+    default: 'null'
+  note:
+    description: 'note'
+    required: false
+    default: 'null'
+  iterations_config:
+    description: 'iterations_config'
+    required: false
+    default: 'false'
+  iterations:
+    description: 'iterations'
+    required: false
+    default: '1'
+  inputallfiles:
+    description: 'upload dependency file'
+    required: false
+    default: 'null'
+  supportedfolderPath:  # id of input
+    description: 'Supported File Folder'
+    required: false
+    default: '0'
+  workspaceid:  # id of input
+    description: 'Workspace Id'
+    required: false
+    default: '0'
+  datamodelid:  # id of input
+    description: 'Data Model Id'
+    required: false
+    default: '0'  
+  
 runs:
   using: 'docker'
   image: 'Dockerfile'
