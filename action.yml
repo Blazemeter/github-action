@@ -105,7 +105,15 @@ inputs:
   datamodelid:  # id of input
     description: 'Data Model Id'
     required: false
-    default: '0'  
+    default: '0' 
+  testRunByTestName:
+    description: 'test Run By Test Name'
+    required: false
+    default: 'false'
+  ignoreSLA:
+    description: 'job always success'
+    required: false
+    default: 'false'
   
 runs:
   using: 'docker'
