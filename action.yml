@@ -114,6 +114,14 @@ inputs:
     description: 'job always success'
     required: false
     default: 'false'
+  webhookURL:
+    description: 'microsoft webhook notification'
+    required: false
+    default: 'null'
+  webhookMetaData:
+    description: 'microsoft webhook notification metadata'
+    required: false
+    default: 'null'
   
 runs:
   using: 'docker'
