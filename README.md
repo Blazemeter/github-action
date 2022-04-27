@@ -1,9 +1,9 @@
 # Blazemeter Action
 This action allows you to run Blazemeter existing test and create a new test.
 ## Inputs
-### `apikey` ^required^
+### `apikey` **required**
 - The API key of Blazemeter.
-### `apisecret` ^required^
+### `apisecret` **required**
 - The API secret key of Blazemeter.
 ### `testid`
 - The Test Id of Blazemeter.
