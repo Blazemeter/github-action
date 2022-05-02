@@ -118,10 +118,10 @@ inputs:
     description: 'microsoft webhook notification'
     required: false
     default: 'null'
-  webhookMetaData:
-    description: 'microsoft webhook notification metadata'
+  enablePublicReportUrl:
+    description: 'send public report url from microsoft webhook notification'
     required: false
-    default: 'null'
+    default: 'false'
   
 runs:
   using: 'docker'
