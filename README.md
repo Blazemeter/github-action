@@ -53,8 +53,8 @@ This action allows you to run Blazemeter existing test and create a new test.
 - When set to true, the job always returns a **Success**
 ### `webhookURL`
 - Used when send microsoft teams notification for test start, internal report url, public report url, test end and test status
-### `webhookMetaData`
-- Used when send custom metadata through a microsoft teams notification
+### `enablePublicReportUrl`
+- Used when send public report url through a microsoft teams notification
 ## Example
 **1. Run Existing Test**
 ```
