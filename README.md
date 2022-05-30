@@ -52,7 +52,7 @@ This action allows you to run Blazemeter existing test and create a new test.
 ### `ignoreSLA`
 - When set to true, the job always returns a **Success**
 ### `webhookURL`
-- Used when send microsoft teams notification for test start, internal report url, public report url, test end and test status
+- Used when send microsoft teams notification for blazemeter test status
 ### `enablePublicReportUrl`
 - Used when send public report url through a microsoft teams notification
 ## Example
@@ -60,18 +60,28 @@ This action allows you to run Blazemeter existing test and create a new test.
 ```
 uses: BlazeRunner-BZR/Github-Action@v6
 with:
-   apikey: 'xxx'
-   apisecret: 'xxx'
-   testid: 'xxx'
+   apikey: "xxxx"
+   apisecret: "xxxx"
+   testid: "xxxx"
 ```
 **2. Create New Test**
 ```
 uses: BlazeRunner-BZR/Github-Action@v6
 with:
-   apikey: 'xxx'
-   apisecret: 'xxx'
-   createtest: 'xxx'
-   inputstartfile: 'xxx'
-   testname: 'xxx'
-   projectid: 'xxxx' 
+   apikey: "xxxx"
+   apisecret: "xxxx"
+   createtest: "xxxx"
+   inputstartfile: "xxxx"
+   testname: "xxxx"
+   projectid: "xxxx" 
+ ```
+**3. Send microsoft teams notification**
+```
+uses: BlazeRunner-BZR/Github-Action@v6
+with:
+   apikey: "xxxx"
+   apisecret: "xxxx"
+   testid: "xxxx"
+   webhookURL : "xxxx"
+   ContinuePipeline: "false"
  ```
