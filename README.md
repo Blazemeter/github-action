@@ -1,49 +1,49 @@
 # Blazemeter Action
 This action allows you to run Blazemeter existing test and create a new test.
 ## Inputs
-### `apikey` **required**
+### `apiKey` **required**
 - The API key of Blazemeter.
-### `apisecret` **required**
+### `apiSecret` **required**
 - The API secret key of Blazemeter.
-### `testid`
+### `testId`
 - The Test Id of Blazemeter.
-### `showtaillog`
+### `showTailLog`
 - If **true**, shows a running log in real-time in the Github action console.
-### `createtest`
+### `createTest`
 - If **true**, creates a new test in BlazeMeter
-### `testname`
+### `testName`
 - Name of the BlazeMeter Test
-### `inputallfiles`
+### `inputAllFiles`
 - Used when uploading multiple files while creating or updating the test
-### `inputstartfile`
+### `inputStartFile`
 - Used when uploading single start file while test creation
-### `Uploadfilechk`
+### `uploadFileCheck`
 - When Used in conjunction with inputallfiles, this must be set to true
-### `totalusers`
+### `totalUsers`
 - Number of target concurrent virtual users
 ### `duration`
 - Time to hold target concurrency (in minutes)
-### `projectid`
+### `projectId`
 - BlazeMeter Project ID
-### `rampup`
+### `rampUp`
 - Ramp-up time to reach target concurrency (in minutes)
-### `ContinuePipeline`
+### `continuePipeline`
 - When set to false, the pipeline waits until the test execution completes
-### `multitests`
+### `multiTests`
 - If the test being kicked off is a multi-test, this value must be set to true
-### `functionaltest`
+### `functionalTest`
 - If a functional test suite is being kicked off, this value must be set to true
-### `modeldata`
+### `modelData`
 - Used in cases where the variables inside the Test Data Model need to be updated
-### `env_variable`
+### `envVariable`
 - Used to update any variables in an existing Taurus .yaml file by passing key value pair
-### `jmeterproperties`
+### `jmeterProperties`
 - Used to add Jmeter Properties
-### `reportname`
+### `reportName`
 - Report Name in BlazeMeter
 ### `note`
 - Notes section of a given report in BlazeMeter
-### `iterations_config`
+### `iterationsConfig`
 - Run a test based on iterations and not duration
 ### `iterations`
 - In case of iterations based test, set the number of iterations
@@ -60,28 +60,28 @@ This action allows you to run Blazemeter existing test and create a new test.
 ```
 uses: BlazeRunner-BZR/Github-Action@v6
 with:
-   apikey: "xxxx"
-   apisecret: "xxxx"
-   testid: "xxxx"
+   apiKey: "xxxx"
+   apiSecret: "xxxx"
+   testId: "xxxx"
 ```
 **2. Create New Test**
 ```
 uses: BlazeRunner-BZR/Github-Action@v6
 with:
-   apikey: "xxxx"
-   apisecret: "xxxx"
-   createtest: "xxxx"
-   inputstartfile: "xxxx"
-   testname: "xxxx"
-   projectid: "xxxx" 
+   apiKey: "xxxx"
+   apiSecret: "xxxx"
+   createTest: "xxxx"
+   inputStartFile: "xxxx"
+   testName: "xxxx"
+   projectId: "xxxx" 
  ```
 **3. Send microsoft teams notification**
 ```
 uses: BlazeRunner-BZR/Github-Action@v6
 with:
-   apikey: "xxxx"
-   apisecret: "xxxx"
-   testid: "xxxx"
+   apiKey: "xxxx"
+   apiSecret: "xxxx"
+   testId: "xxxx"
    webhookURL : "xxxx"
-   ContinuePipeline: "false"
+   continuePipeline: "false"
  ```
