@@ -1,36 +1,35 @@
-# action.yml
 name: 'BlazeRunnerAction'
 description: 'Run Blazemeter Test from GitHub Action'
 inputs:
-  apikey:  # id of input
+  apiKey: 
     description: 'API Key'
     required: true
     default: 'Test'
-  apisecret:  # id of input
+  apiSecret:
     description: 'API Secret'
     required: true
     default: 'Test'
-  testid:  # id of input
+  testId: 
     description: 'Test Id'
     required: true
     default: '0'
-  testname:  # id of input
+  testName: 
     description: 'Test name for creating new test'
     required: false
     default: '0'
-  projectid:  # id of input
+  projectId: 
     description: 'Project Id'
     required: false
     default: '0'
-  inputstartfile:  # id of input
+  inputStartFile: 
     description: 'Start file for create test'
     required: false
     default: 'null'
-  createtest:  # id of input
+  createTest: 
     description: 'Create test flag'
     required: false
     default: 'false'
-  totalusers:
+  totalUsers:
     description: 'total users'
     required: false
     default: '20'
@@ -38,43 +37,43 @@ inputs:
     description: 'duration'
     required: false
     default: '20'
-  rampup:
+  rampUp:
     description: 'rampup'
     required: false
     default: '1'
-  uploadfilechk:
+  uploadFileCheck:
     description: 'upload file'
     required: false
     default: 'false'
-  continuepipeline:
+  continuePipeline:
     description: 'Continue Pipeline'
     required: false
     default: 'true'
-  multitests:
+  multiTests:
     description: 'multitests'
     required: false
     default: 'false'
-  functionaltest:
+  functionalTest:
     description: 'functionaltest'
     required: false
     default: 'false'
-  modeldata:  # id of input
+  modelData: 
     description: 'Data to be updated in JSON String format'
     required: false
     default: '{}'
-  env_variable:
+  envVariable:
     description: 'env_variable'
     required: false
     default: '{}'
-  showtaillog:
+  showTailLog:
     description: 'showtaillog'
     required: false
     default: 'true'
-  jmeterproperties:
+  jmeterProperties:
     description: 'jmeterproperties'
     required: false
     default: 'null'
-  reportname:
+  reportName:
     description: 'report name'
     required: false
     default: 'null'
@@ -82,7 +81,7 @@ inputs:
     description: 'note'
     required: false
     default: 'null'
-  iterations_config:
+  iterationsConfig:
     description: 'iterations_config'
     required: false
     default: 'false'
@@ -90,22 +89,10 @@ inputs:
     description: 'iterations'
     required: false
     default: '1'
-  inputallfiles:
+  inputAllFiles:
     description: 'upload dependency file'
     required: false
     default: 'null'
-  supportedfolderPath:  # id of input
-    description: 'Supported File Folder'
-    required: false
-    default: '0'
-  workspaceid:  # id of input
-    description: 'Workspace Id'
-    required: false
-    default: '0'
-  datamodelid:  # id of input
-    description: 'Data Model Id'
-    required: false
-    default: '0' 
   testRunByTestName:
     description: 'test Run By Test Name'
     required: false
@@ -115,14 +102,15 @@ inputs:
     required: false
     default: 'false'
   webhookURL:
-    description: 'microsoft webhook notification'
+    description: 'azure team web hook url'
     required: false
     default: 'null'
   enablePublicReportUrl:
-    description: 'send public report url from microsoft webhook notification'
+    description: 'azure team web hook url'
     required: false
     default: 'false'
   
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  
