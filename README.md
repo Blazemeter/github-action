@@ -41,7 +41,7 @@ This action allows you to run Blazemeter existing test and create a new test.
 - Used to add Jmeter Properties
 ### `reportName`
 - Report Name in BlazeMeter
-### `note`
+### `notes`
 - Notes section of a given report in BlazeMeter
 ### `iterationsConfig`
 - Run a test based on iterations and not duration
@@ -53,12 +53,12 @@ This action allows you to run Blazemeter existing test and create a new test.
 - When set to true, the job always returns a **Success**
 ### `webhookURL`
 - Used when send microsoft teams notification for blazemeter test status
-### `enablePublicReportUrl`
+### `enablePublicReportURL`
 - Used when send public report url through a microsoft teams notification
 ## Example
 **1. Run Existing Test**
 ```
-uses: BlazeRunner-BZR/Github-Action@v6
+uses: BlazeRunner-BZR/Github-Action@v8
 with:
    apiKey: "xxxx"
    apiSecret: "xxxx"
@@ -66,7 +66,7 @@ with:
 ```
 **2. Create New Test**
 ```
-uses: BlazeRunner-BZR/Github-Action@v6
+uses: BlazeRunner-BZR/Github-Action@v8
 with:
    apiKey: "xxxx"
    apiSecret: "xxxx"
@@ -77,7 +77,7 @@ with:
  ```
 **3. Send microsoft teams notification**
 ```
-uses: BlazeRunner-BZR/Github-Action@v6
+uses: BlazeRunner-BZR/Github-Action@v8
 with:
    apiKey: "xxxx"
    apiSecret: "xxxx"
