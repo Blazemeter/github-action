@@ -5,14 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Run Blazemeter test
     steps:
-      # - name: Checkout
-        # uses: actions/checkout@v2
       - name: Run Blazemeter test
-        #uses: ./ # Uses an action in the root directory
-        uses: PoojaMutadak504/DockerAction@v2
+        uses: BlazeRunner-BZR/Github-Action@v8
         id: run-existing-test
         with:
           apikey: 'xxxx'
           apisecret: 'xxxx'
           testid: 'xxxx'
-
