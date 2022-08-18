@@ -77,8 +77,8 @@ inputs:
     description: 'report name'
     required: false
     default: 'null'
-  note:
-    description: 'note'
+  notes:
+    description: 'notes'
     required: false
     default: 'null'
   iterationsConfig:
@@ -105,7 +105,7 @@ inputs:
     description: 'azure team web hook url'
     required: false
     default: 'null'
-  enablePublicReportUrl:
+  enablePublicReportURL:
     description: 'azure team web hook url'
     required: false
     default: 'false'
