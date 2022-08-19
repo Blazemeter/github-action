@@ -6,7 +6,7 @@ jobs:
     name: Run Blazemeter test
     steps:
       - name: Run Blazemeter test
-        uses: BlazeRunner-BZR/Github-Action@v8
+        uses: BlazeRunner-BZR/Github-Action@v8.1
         id: run-existing-test
         with:
           apikey: ''
