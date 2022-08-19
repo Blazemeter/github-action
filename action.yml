@@ -10,7 +10,7 @@ inputs:
     required: true
     default: 'Test'
   testID: 
-    description: 'Test Id'
+    description: 'Test ID'
     required: true
     default: '0'
   testName: 
@@ -18,7 +18,7 @@ inputs:
     required: false
     default: '0'
   projectID: 
-    description: 'Project Id'
+    description: 'Project ID'
     required: false
     default: '0'
   inputStartFile: 
