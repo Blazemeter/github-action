@@ -5,8 +5,8 @@ This action allows you to run Blazemeter existing test and create a new test.
 - The API key of Blazemeter.
 ### `apiSecret` **required**
 - The API secret key of Blazemeter.
-### `testId`
-- The Test Id of Blazemeter.
+### `testID`
+- The Test ID of Blazemeter.
 ### `showTailLog`
 - If **true**, shows a running log in real-time in the Github action console.
 ### `createTest`
@@ -23,7 +23,7 @@ This action allows you to run Blazemeter existing test and create a new test.
 - Number of target concurrent virtual users
 ### `duration`
 - Time to hold target concurrency (in minutes)
-### `projectId`
+### `projectID`
 - BlazeMeter Project ID
 ### `rampUp`
 - Ramp-up time to reach target concurrency (in minutes)
@@ -58,30 +58,30 @@ This action allows you to run Blazemeter existing test and create a new test.
 ## Example
 **1. Run Existing Test**
 ```
-uses: BlazeRunner-BZR/Github-Action@v8
+uses: BlazeRunner-BZR/Github-Action@v8.1
 with:
    apiKey: ""
    apiSecret: ""
-   testId: ""
+   testID: ""
 ```
 **2. Create New Test**
 ```
-uses: BlazeRunner-BZR/Github-Action@v8
+uses: BlazeRunner-BZR/Github-Action@v8.1
 with:
    apiKey: ""
    apiSecret: ""
    createTest: ""
    inputStartFile: ""
    testName: ""
-   projectId: "" 
+   projectID: "" 
  ```
 **3. Send microsoft teams notification**
 ```
-uses: BlazeRunner-BZR/Github-Action@v8
+uses: BlazeRunner-BZR/Github-Action@v8.1
 with:
    apiKey: ""
    apiSecret: ""
-   testId: ""
+   testID: ""
    webhookURL : ""
    continuePipeline: "false"
  ```
