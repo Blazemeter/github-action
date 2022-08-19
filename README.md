@@ -60,28 +60,28 @@ This action allows you to run Blazemeter existing test and create a new test.
 ```
 uses: BlazeRunner-BZR/Github-Action@v8
 with:
-   apiKey: "xxxx"
-   apiSecret: "xxxx"
-   testId: "xxxx"
+   apiKey: ""
+   apiSecret: ""
+   testId: ""
 ```
 **2. Create New Test**
 ```
 uses: BlazeRunner-BZR/Github-Action@v8
 with:
-   apiKey: "xxxx"
-   apiSecret: "xxxx"
-   createTest: "xxxx"
-   inputStartFile: "xxxx"
-   testName: "xxxx"
-   projectId: "xxxx" 
+   apiKey: ""
+   apiSecret: ""
+   createTest: ""
+   inputStartFile: ""
+   testName: ""
+   projectId: "" 
  ```
 **3. Send microsoft teams notification**
 ```
 uses: BlazeRunner-BZR/Github-Action@v8
 with:
-   apiKey: "xxxx"
-   apiSecret: "xxxx"
-   testId: "xxxx"
-   webhookURL : "xxxx"
+   apiKey: ""
+   apiSecret: ""
+   testId: ""
+   webhookURL : ""
    continuePipeline: "false"
  ```

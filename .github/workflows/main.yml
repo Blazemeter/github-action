@@ -9,6 +9,6 @@ jobs:
         uses: BlazeRunner-BZR/Github-Action@v8
         id: run-existing-test
         with:
-          apikey: 'xxxx'
-          apisecret: 'xxxx'
-          testid: 'xxxx'
+          apikey: ''
+          apisecret: ''
+          testid: ''
