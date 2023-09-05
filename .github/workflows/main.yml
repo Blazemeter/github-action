@@ -1,14 +1,24 @@
-on: [push]
-
+name: github-action
+env:
+  apiKey: "38e53fd821771b102b5bfddc"
+  apiSecret: "c9fb4b4be583657d952d3d25103b28590811e7b0f43bf8d7d9107b6345ae752f15a21d50"
+  testID: "13223116"
+  continuePipeline: "false"
+  showTailLog: "false"
+  
+on: push
 jobs:
-  run_existing_test:
+  github-action:
     runs-on: ubuntu-latest
-    name: Run Blazemeter test
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
       - name: Run Blazemeter test
         uses: BlazeRunner-BZR/Github-Action@v8.1
-        id: run-existing-test
+        id: run-test
         with:
-          apikey: ''
-          apisecret: ''
-          testid: ''
+          apiKey: ${{env.apiKey}}
+          apiSecret: ${{env.apiSecret}}
+          testID: ${{env.testID}}
+          continuePipeline: ${{env.continuePipeline}}
+          showTailLog: ${{env.showTailLog}}
