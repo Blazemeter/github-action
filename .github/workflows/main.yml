@@ -3,7 +3,7 @@ env:
   apiKey: "38e53fd821771b102b5bfddc"
   apiSecret: "c9fb4b4be583657d952d3d25103b28590811e7b0f43bf8d7d9107b6345ae752f15a21d50"
   createTest: "true"
-  inputStartFile: "BlazeDemo.yaml"
+  inputStartFile: "BlazeDemo-Taurus.yaml"
   testName: "gihub_new_1"
   projectID: "961236"
   continuePipeline: "false"
