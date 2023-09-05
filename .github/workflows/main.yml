@@ -2,29 +2,25 @@ name: github-action
 env:
   apiKey: "38e53fd821771b102b5bfddc"
   apiSecret: "c9fb4b4be583657d952d3d25103b28590811e7b0f43bf8d7d9107b6345ae752f15a21d50"
-  createTest: "true"
-  inputStartFile: "BlazeDemo.jmx"
-  testName: "github_jmx_test"
-  projectID: "961236"
   continuePipeline: "false"
   showTailLog: "false"
-  
+  testID: "11132497"  
+  webhookURL: "https://perforcesoftwareinc.webhook.office.com/webhookb2/55a7a621-8da8-4038-b209-c17029acb527@95b666d1-9a75-49ab-95a3-8969fbcdc08c/IncomingWebhook/8df752b059714c00b2c1317b9ea24b4c/b99b43b0-b40d-4401-a0c4-5a30c07badcd"
+
 on: push
 jobs:
-  github-action:
-    runs-on: ubuntu-latest
+  first-job:
+    runs-on: ubuntu-latest  
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.4
-      - name: Run Blazemeter test
-        uses: BlazeRunner-BZR/Github-Action@v8.1
-        id: run-test
-        with:
-          apiKey: ${{env.apiKey}}
-          apiSecret: ${{env.apiSecret}}
-          createTest: ${{env.createTest}}
-          inputStartFile: ${{env.inputStartFile}}
-          testName: ${{env.testName}}
-          projectID: ${{env.projectID}}
-          continuePipeline: ${{env.continuePipeline}}
-          showTailLog: ${{env.showTailLog}}
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
+    - name: Run Blazemeter test
+      uses: BlazeRunner-BZR/Github-Action@v8.1
+      id: run-test
+      with:
+        apiKey: ${{env.apiKey}}
+        apiSecret: ${{env.apiSecret}}
+        continuePipeline: ${{env.continuePipeline}}
+        showTailLog: ${{env.showTailLog}}
+        testID: ${{env.testID}}
+        webhookURL: ${{env.webhookURL}}
