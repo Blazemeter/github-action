@@ -109,6 +109,10 @@ inputs:
     description: 'azure team web hook url'
     required: false
     default: 'false'
+  webhookURLSlack:
+    description: 'azure team web hook url for slack'
+    required: false
+    default: 'null' 
   
 runs:
   using: 'docker'
