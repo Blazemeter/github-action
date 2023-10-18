@@ -58,7 +58,7 @@ This action allows you to run Blazemeter existing test and create a new test.
 ## Example
 **1. Run Existing Test**
 ```
-uses: BlazeRunner-BZR/Github-Action@v8.1
+uses: BlazeRunner-BZR/Github-Action@v8.2
 with:
    apiKey: ""
    apiSecret: ""
@@ -66,7 +66,7 @@ with:
 ```
 **2. Create New Test**
 ```
-uses: BlazeRunner-BZR/Github-Action@v8.1
+uses: BlazeRunner-BZR/Github-Action@v8.2
 with:
    apiKey: ""
    apiSecret: ""
@@ -77,7 +77,7 @@ with:
  ```
 **3. Send microsoft teams notification**
 ```
-uses: BlazeRunner-BZR/Github-Action@v8.1
+uses: BlazeRunner-BZR/Github-Action@v8.2
 with:
    apiKey: ""
    apiSecret: ""
