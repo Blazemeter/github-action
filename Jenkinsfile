@@ -18,13 +18,13 @@ pipeline {
     stages {
         stage('Create Release') {
             environment {
-                github_key = credentials('github_key_test')
+                github_token = credentials('github_release_token')
             }
             steps {
                 script {
                     sh'''
-                    rversion=$(cat /build/jenkins-release.ini|  awk '{print $3}')
-                    python /build/release-to-github.py ${github_key} ${rversion}
+                    rversion=$(cat /build/versionToRelease.ini | awk '{print $3}')
+                    python /build/release-to-github.py ${github_token} ${rversion}
                     '''
                 }
             }
