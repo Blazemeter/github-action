@@ -1,3 +1,11 @@
+### Note: 
+
+The release process is done through Jenkins pipeline (https://blazect-jenkins.blazemeter.com/view/blazerunner-plugins/job/github-action-release) which usages github token. 
+
+***The token expires on 19/10/2024. Please renew it in advance*** 
+
+To renew the githhub token follow the link - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens 
+
 # Blazemeter Action
 This action allows you to run Blazemeter existing test and create a new test.
 ## Inputs
