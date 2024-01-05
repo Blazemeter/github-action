@@ -63,6 +63,11 @@ This action allows you to run Blazemeter existing test and create a new test.
 - Used when send microsoft teams notification for blazemeter test status
 ### `enablePublicReportURL`
 - Used when send public report url through a microsoft teams notification
+### `locations`
+- Comma separated location IDs as String. Ex., "asia-east1-a,australia-southeast1-a". All supported locationIDs can be found at https://api.blazemeter.com/performance/#list-of-google-cloud-locations
+### `dedicatedIP`
+- A boolean value defaulted to **false**. When set to **true**, dedicatedIPs will be used if available.
+
 ## Example
 **1. Run Existing Test**
 ```

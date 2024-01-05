@@ -1,11 +1,12 @@
 name: github-action
 env:
-  apiKey: "38e53fd821771b102b5bfddc"
-  apiSecret: "c9fb4b4be583657d952d3d25103b28590811e7b0f43bf8d7d9107b6345ae752f15a21d50"
+  apiKey: "17367bcc353b421e3b2a51d8"
+  apiSecret: "f7f1e77340e84a3ed0b8c493fd228a1b75aa1b75d2a42f4855ad230918190a356cbb796b"
+  testID: "13794733"
   continuePipeline: "false"
   showTailLog: "false"
-  testID: "11132497"  
-  webhookURL: "https://perforcesoftwareinc.webhook.office.com/webhookb2/55a7a621-8da8-4038-b209-c17029acb527@95b666d1-9a75-49ab-95a3-8969fbcdc08c/IncomingWebhook/8df752b059714c00b2c1317b9ea24b4c/b99b43b0-b40d-4401-a0c4-5a30c07badcd"
+  locations: "azure-east-au-1,ap-south-1"
+  dedicatedIP: "false"
 
 on: push
 jobs:
@@ -23,4 +24,5 @@ jobs:
         continuePipeline: ${{env.continuePipeline}}
         showTailLog: ${{env.showTailLog}}
         testID: ${{env.testID}}
-        webhookURL: ${{env.webhookURL}}
+        locations: ${{env.locations}}
+        dedicatedIP: ${{env.dedicatedIP}}
