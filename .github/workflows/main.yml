@@ -16,7 +16,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2.3.4
     - name: Run Blazemeter test
-      uses: BlazeRunner-BZR/Github-Action@v8.1
+      uses: Blazemeter/github-action@v8.4
       id: run-test
       with:
         apiKey: ${{env.apiKey}}
