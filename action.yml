@@ -121,6 +121,26 @@ inputs:
     description: 'To use the dedicatedIP for the selected location'
     required: false
     default: 'false'
+  disableLoadConfig:
+    description: 'Select this to disable load configuration for existing JMeter based test. Load configuration will be taken from the Script.'
+    required: false
+    default: 'false'
+  steps:
+    description: 'You can configure your test to ramp up in steps. This is the number of steps to reach the total users. Default is disabled(empty field). To enable it, use any number greater than 0. Once enabled, use 0 to disable it.'
+    required: false
+    default: ''
+  throughput:
+    description: 'You can limit the number of requests per second (RPS) for your test. Default is disabled(empty field). To enable it, use any number greater than 1. Once enabled, use 0 to disable it.'
+    required: false
+    default: ''
+  concurrencyControlEnabled:
+    description: 'Select this to allow users to change no. of users at runtime. Default is false(empty field). Keep it selected to enable this option.'
+    required: false
+    default: ''
+  iterationsEnabled:
+    description: 'Select this to use iterations instead of duration. If selected, iteration will be used not duration. If not selected, duration will be used.'
+    required: false
+    default: 'false'
   
 runs:
   using: 'docker'
