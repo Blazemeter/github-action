@@ -57,6 +57,7 @@ This action allows you to run Blazemeter existing test and create a new test.
 - Used when send public report url through a microsoft teams notification
 ### `locations`
 - Comma separated location IDs as String. Ex., "asia-east1-a,australia-southeast1-a". All supported locationIDs can be found at https://api.blazemeter.com/performance/#list-of-google-cloud-locations
+- For Private locations(OPLs), use ID as "harbor-661f7af50d8f6f8f0d014359". Just append the 'harbor-' prefix to the ID of the OPL.
 ### `dedicatedIP`
 - A boolean value defaulted to **false**. When set to **true**, dedicatedIPs will be used if available.
 
