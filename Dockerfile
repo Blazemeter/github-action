@@ -1,4 +1,43 @@
 # Container image that runs your code
 FROM blazerunner/blazemeter:github
 
-CMD pwsh /Blazemeter-run.ps1 -apikey $env:INPUT_APIKEY -apisecret $env:INPUT_APISECRET -testidinput $env:INPUT_TESTID -showtaillog $env:INPUT_SHOWTAILLOG -createtest $env:INPUT_CREATETEST -testname $env:INPUT_TESTNAME -projectid $env:INPUT_PROJECTID -inputallfiles $env:INPUT_INPUTALLFILES -inputstartfile $env:INPUT_INPUTSTARTFILE -totalusers $env:INPUT_TOTALUSERS -duration $env:INPUT_DURATION -rampup $env:INPUT_RAMPUP -Uploadfilechk $env:INPUT_UPLOADFILECHECK -ContinuePipeline $env:INPUT_CONTINUEPIPELINE -multitests $env:INPUT_MULTITESTS -functionaltest $env:INPUT_FUNCTIONALTEST -modeldata $env:INPUT_MODELDATA -env_variable $env:INPUT_ENVVARIABLE -jmeterproperties $env:INPUT_JMETERPROPERTIES -reportname $env:INPUT_REPORTNAME -note $env:INPUT_NOTES -iterations_config $env:INPUT_ITERATIONSCONFIG -iterations $env:INPUT_ITERATIONS -testRunByTestName $env:INPUT_TESTRUNBYTESTNAME -ignoreSLA $env:INPUT_IGNORESLA -webhookURL $env:INPUT_WEBHOOKURL -enablePublicReportUrl $env:INPUT_ENABLEPUBLICREPORTURL -webhookURLSlack $env:INPUT_WEBHOOKURLSLACK -locations $env:INPUT_LOCATIONS -dedicatedIP $env:INPUT_DEDICATEDIP -disableLoadConfig $env:disableLoadConfig -steps $env:steps -throughput $env:throughput -concurrencyControlEnabled $env:concurrencyControlEnabled -iterationsEnabled $env:iterationsEnabled
+CMD pwsh /Blazemeter-run.ps1 \
+    -apikey $env:INPUT_APIKEY \
+    -apisecret $env:INPUT_APISECRET \
+    -testidinput $env:INPUT_TESTID \
+    -showtaillog $env:INPUT_SHOWTAILLOG \
+    -createtest $env:INPUT_CREATETEST \
+    -testname $env:INPUT_TESTNAME \
+    -projectid $env:INPUT_PROJECTID \
+    -inputallfiles $env:INPUT_INPUTALLFILES \
+    -inputstartfile $env:INPUT_INPUTSTARTFILE \
+    -totalusers $env:INPUT_TOTALUSERS \
+    -duration $env:INPUT_DURATION \
+    -rampup $env:INPUT_RAMPUP \
+    -Uploadfilechk $env:INPUT_UPLOADFILECHECK \
+    -ContinuePipeline $env:INPUT_CONTINUEPIPELINE \
+    -multitests $env:INPUT_MULTITESTS \
+    -functionaltest $env:INPUT_FUNCTIONALTEST \
+    -modeldata $env:INPUT_MODELDATA \
+    -env_variable $env:INPUT_ENVVARIABLE \
+    -jmeterproperties $env:INPUT_JMETERPROPERTIES \
+    -reportname $env:INPUT_REPORTNAME \
+    -note $env:INPUT_NOTES \
+    -iterations_config $env:INPUT_ITERATIONSCONFIG \
+    -iterations $env:INPUT_ITERATIONS \
+    -testRunByTestName $env:INPUT_TESTRUNBYTESTNAME \
+    -ignoreSLA $env:INPUT_IGNORESLA \
+    -webhookURL $env:INPUT_WEBHOOKURL \
+    -enablePublicReportUrl $env:INPUT_ENABLEPUBLICREPORTURL \
+    -webhookURLSlack $env:INPUT_WEBHOOKURLSLACK \
+    -locations $env:INPUT_LOCATIONS \
+    -dedicatedIP $env:INPUT_DEDICATEDIP \
+    -disableLoadConfig $env:INPUT_DISABLELOADCONFIG \
+    -steps $env:INPUT_STEPS \
+    -throughput $env:INPUT_THROUGHPUT \
+    -concurrencyControlEnabled $env:INPUT_CONCURRENCYCONTROLENABLED \
+    -iterationsEnabled $env:INPUT_ITERATIONSENABLED \
+    -apiToken $env:INPUT_APITOKEN \
+    -triggerUrl $env:INPUT_TRIGGERURL \
+    -runExistingAPITest $env:INPUT_RUNEXISTINGAPITEST \
+    -runExistingBucketLevelTest $env:INPUT_RUNEXISTINGBUCKETLEVELTEST
