@@ -141,6 +141,22 @@ inputs:
     description: 'Select this to use iterations instead of duration. If selected, iteration will be used not duration. If not selected, duration will be used.'
     required: false
     default: 'false'
+  apiToken:
+    description: 'BlazeMeter API Monitoring Token'
+    required: false
+    default: ''
+  triggerUrl:
+    description: 'BlazeMeter API Monitoring TriggerURl to trigger either individual API test or bucket-level API test'
+    required: false
+    default: ''
+  runExistingAPITest:
+    description: 'To run BlazeMeter API Monitoring individual API test.'
+    required: false
+    default: 'false'
+  runExistingBucketLevelTest:
+    description: 'To run BlazeMeter API Monitoring bucket-level API test.'
+    required: false
+    default: 'false'
   
 runs:
   using: 'docker'

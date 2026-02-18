@@ -81,6 +81,23 @@ This action allows you to run Blazemeter existing test and create a new test.
 
 - Select this to use iterations instead of duration. If selected, iteration will be used not duration. If not selected, duration will be used.
 
+### `apiToken`
+
+- The BlazeMeter API Monitoring Token required to run API monitoring tests. This is different from the API key and secret used for other types of tests.
+
+### `triggerUrl`
+
+- The BlazeMeter API Monitoring TriggerURL to trigger either individual API test or bucket-level API tests. This is required when running any API monitoring test.
+
+### `runExistingAPITest`
+
+- Set this to true when you want to run an existing individual API monitoring test. Only one of `runExistingAPITest` or `runExistingBucketLevelTest` should be set to true.
+
+### `runExistingBucketLevelTest`
+
+- Set this to true when you want to run an existing bucket-level API monitoring test. Only one of `runExistingAPITest` or `runExistingBucketLevelTest` should be set to true.
+
+
 ## Example
 **1. Run Existing Test**
 ```
@@ -182,4 +199,24 @@ with:
    testName: 'xxx'
    projectID: 'xxxx'
    disableLoadConfig: "true"
+```
+
+**9. Run BlazeMeter API Monitoring Test**
+
+```
+uses: BlazeRunner-BZR/Github-Action@v8
+with:
+   apiToken: 'xxx'
+   runExistingAPITest: 'true'
+   triggerUrl: 'xxx'
+```
+
+**10. Run BlazeMeter API Monitoring bucket-level Test**
+
+```
+uses: BlazeRunner-BZR/Github-Action@v8
+with:
+   apiToken: 'xxx'
+   runExistingBucketLevelTest: 'true'
+   triggerUrl: 'xxx'
 ```
